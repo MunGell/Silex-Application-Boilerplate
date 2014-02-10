@@ -1,11 +1,11 @@
 Vagrant::Config.run do |config|
-    config.vm.define :silex54 do |config|
+    config.vm.define :silex do |config|
         config.vm.box = "precise64"
         config.vm.box_url = "http://files.vagrantup.com/precise64.box"
         config.ssh.max_tries = 10
         config.vm.forward_port 80, 8080
         config.vm.forward_port 3306, 3306
-        config.vm.host_name = "silex54"
+        config.vm.host_name = "silex"
         config.vm.network :hostonly, "192.168.100.100"
         config.vm.share_folder("www", "/var/www", "./htdocs", type: "nfs")
 

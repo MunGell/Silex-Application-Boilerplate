@@ -1,7 +1,9 @@
+
 #PHP 5.4 setup 
 #this will update php to the lastest version, otherwise it will be set to the Guest OS default
 class php54 {
 
+	
     package { "python-software-properties":
     		ensure => present,
     		require => Exec['php54 apt update']
@@ -23,18 +25,8 @@ class php54 {
 	        require => Package['python-software-properties'],
 	}
 
+
 	exec { "php54 apt update":
 		command => 'apt-get update',
 	}
-
-	file { "/etc/php5/apache2/php.ini":
-	    ensure  => present,
-	    owner => root, 
-	    group => root,
-	    source  => "/vagrant/puppet/templates/php5-4.ini",
-	    require => [
-	        Package['php5'], 
-	        Package['apache2']
-	    ],
-	}  
 }

@@ -13,16 +13,21 @@
         "symfony/console": "~2.2",
         "symfony/css-selector": "~2.2",
         "symfony/finder": "~2.2",
-        "symfony/form": "~2.2",
         "symfony/monolog-bridge": "~2.2",
         "symfony/process": "~2.2",
         "symfony/security": "~2.2",
+        
+        "symfony/form": "~2.3",
         "symfony/translation": "~2.2",
         "symfony/validator": "~2.2",
-
+        
+        "symfony/locale": "~2.3",
+        
         "twig/twig": ">=1.8,<2.0-dev", 
         "symfony/twig-bridge": "~2.3", 
-        "twig/extensions": "*" 
+        "twig/extensions": "*", 
+
+        "doctrine/dbal": "2.2.*"
     },
     "autoload": {
         "psr-0": { "": "src/" }

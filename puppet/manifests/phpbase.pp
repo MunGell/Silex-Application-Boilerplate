@@ -16,7 +16,7 @@ exec {
     	#the command to be executed
         command => '/usr/bin/apt-get update',
 
-        #load in the class that contains the update repo command (php55)
+        #load in the class that contains the update repo command (php54)
         require => Exec['add php54 apt-repo']
 }
 
@@ -25,9 +25,7 @@ exec {
 #so for our apache module it will be 'puppet/modules/apache/manifests/init.pp'
 #the name of the class defined must also have a class defined, with the same name as the module name
 #so for the apache example, puppet/modules/apache/manifests/init.pp' would contain a class called 'apache'
-# include bootstrap
 include update
-include composer
 include apache
 include php54
 include php
