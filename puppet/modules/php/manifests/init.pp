@@ -1,21 +1,24 @@
 class php {
     $packages = [
-        "php5", 
-        "php5-cli", 
-        "php5-mysql", 
-        "php-pear", 
-        "php5-dev", 
-        "php-apc", 
-        "php5-mcrypt", 
-        "php5-gd", 
+        "php5",
+        "php-apc",
+        "php-gettext",
+        "php5-cli",
+        "php5-common",
         "php5-curl",
-        "libapache2-mod-php5", 
-        #php5.5 specific
-        "php5-json",
+        "php5-gd",
+        "php5-fpm",
+        "php5-mcrypt",
+        "php5-memcache",
+        "php5-mysql",
         "php5-xdebug",
-        'php-imagick'
+        "php5-intl",
+        "php5-ldap",
+        "php5-dev",
+        "php5-json",
+        'php5-imagick',
+        "libapache2-mod-php5"
     ]
-
 
     package { $packages:
         ensure  => latest,
