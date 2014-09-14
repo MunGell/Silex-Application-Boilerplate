@@ -32,3 +32,4 @@ include apache
 include php54
 include php
 include mysql
+include silex
