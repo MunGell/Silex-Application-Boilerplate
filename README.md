@@ -20,4 +20,4 @@ Silex
 This application is just [Fabian's Silex Skeleton](https://github.com/silexphp/Silex-Skeleton)
 
 
-You can go to http://silex.dev and see your application
+You can go to http://silex.dev:8080 and see your application
