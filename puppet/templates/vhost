@@ -1,4 +1,4 @@
 <VirtualHost *:80>
     DocumentRoot "/var/www/web/"
-    ServerName silex.localhost.com
+    ServerName silex.dev
 </VirtualHost>

@@ -43,7 +43,7 @@ class apache {
     }
 
     #output to the screen and also write to a file inside conf.d (read about 'tee' here http://linux.101hacks.com/unix/tee-command-examples/)
-    exec { 'echo "ServerName localhost.com" | sudo tee /etc/apache2/conf.d/fqdn':
+    exec { 'echo "ServerName silex.dev" | sudo tee /etc/apache2/conf.d/fqdn':
         require => Package['apache2'],
     }
 }
